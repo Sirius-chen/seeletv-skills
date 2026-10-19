@@ -1,4 +1,0 @@
-interface:
-  display_name: "seeletv Assets Trial"
-  short_description: "Confirm screenplay tone and build consistent visual assets"
-  default_prompt: "Use $seeletv-assets-trial to establish the creative direction of my screenplay and prepare consistent character and key prop assets."

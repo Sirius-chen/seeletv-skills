@@ -1,0 +1,4 @@
+interface:
+  display_name: "seeletv Story"
+  short_description: "Develop and refine short screenplays and dialogue"
+  default_prompt: "Use $seeletv-story to turn my idea into a short screenplay or improve the supplied draft within my constraints."

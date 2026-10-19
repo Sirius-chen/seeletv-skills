@@ -1,0 +1,4 @@
+interface:
+  display_name: "seeletv Assets"
+  short_description: "Set the visual direction and build consistent reference assets"
+  default_prompt: "Use $seeletv-assets to establish the visual direction and prepare the character, location, and prop references my scene needs."

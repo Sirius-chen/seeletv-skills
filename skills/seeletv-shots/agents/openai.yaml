@@ -1,0 +1,4 @@
+interface:
+  display_name: "seeletv Shots"
+  short_description: "Write timed video prompts with camera, blocking, and performance"
+  default_prompt: "Use $seeletv-shots to turn my scene into timed video prompts with clear camera placement, movement, acting, and continuity."

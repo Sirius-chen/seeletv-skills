@@ -32,6 +32,14 @@ A new angle may introduce details absent from the master. Label these as propose
 
 Keep labels minimal. Prefer editable text outside the generated image when exact names or measurements matter. Do not invent a height to fill a sheet.
 
+## Location references
+
+Design only locations needed for the requested scene or recurring use. Establish the fixed spatial anchors that affect filming: entrances, windows, major furniture, levels, routes, scale, and light-source direction. Distinguish a location's stable layout from time-of-day lighting and temporary story states.
+
+A readable establishing reference may be enough. Add an opposite view, detail, or simple layout sketch only when it resolves an actual shot need. A single image cannot establish hidden geometry; label newly designed areas as proposals and check them against existing entrances, object positions, and scale. Reversing the camera must not mirror the room.
+
+Keep canonical location references free of incidental people unless they are part of the intended design. A populated scene or mood frame has a different role; identify it rather than importing its occupants into every shot. Record useful fixed anchors in plain language alongside the image so downstream prompts can describe the same space.
+
 ## Key props
 
 Prioritize objects with distinctive construction, recurring use, meaningful transfer or damage, identity clues, or important handling requirements. Ordinary incidental objects can remain text descriptions.
@@ -59,6 +67,7 @@ Do not leave empty fields or template placeholders in delivered prompts. For ext
 
 - **Character:** identity, age presentation, required anatomy, costume, materials, intrinsic colors, distinguishing marks, and correct story state.
 - **Sheet:** consistency across views, new design assumptions, orientation, required coverage, and readable labels.
+- **Location:** fixed anchors, entrances, scale, lighting direction, camera-side consistency, and clearly identified proposed geometry.
 - **Prop:** complete structure, credible construction for the story world, scale, handling points, markings, asymmetry, and damage state.
 
 Repair the failing attributes while preserving approved ones. Distinguish visual review from creator approval. When the tool cannot reliably preserve identity, text, geometry, or resolution, describe the specific limitation and provide a practical handoff rather than promising exactness.
@@ -72,14 +81,8 @@ Repair only the failing attributes while preserving agreed ones. Stop repeated g
 
 Additional views and sheets should meet a stated need rather than automatically duplicate every master. Finish with an asset index, approved brief, prompts, available output files, and outstanding issues.
 
-## Project record and revisions
+## Revisions and handoff
 
-For multi-asset or multi-session work, maintain one concise `seeletv-project.md` in the task's output folder. Reuse an existing record. For chat-only delivery or unavailable file writing, provide an equivalent compact handoff. Keep project data outside the installed skill directory.
+Use the host's existing output form: supplied documents, conversation, asset metadata, or accessible files. Do not require a new project file, a node graph, or a state-recovery system. For multiple assets, provide a compact index identifying subject/state, revision, parent references, output location when available, and whether it is proposed, a candidate, approved, or needs review.
 
-Record:
-
-- Script revision and coverage, brief revision, confirmed decisions, and unresolved choices.
-- Asset ID and revision, subject/state, parent asset revisions, prompt/output locations, and status: `planned`, `candidate`, `approved`, `needs-review`, or `superseded`.
-- What the user approved, bound to the specific brief or asset revision.
-
-When a script, brief, or approved parent changes, assess downstream dependencies and mark affected assets `needs-review`. Preserve prior files and approvals as history; explain which attributes may have changed. Unaffected assets retain their status. Never overwrite an approved image as if it were the same revision. Resume from recorded decisions rather than assuming approval from file existence.
+Bind approval to the identified revision. If an approved source, design, or parent changes, explain which dependent assets may need review. Preserve prior output versions when the host supports them and keep unaffected assets. Do not assume a file's existence or current selection establishes approval, and do not claim a new revision has replaced unseen downstream work.
